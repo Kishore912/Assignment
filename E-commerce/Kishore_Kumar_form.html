@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Kishore_Kumar_form.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Zone</h1>
+    </header>
+        <div class="products">
+        <div class="shirt">
+            <a href="images (1).jpg" target="_blank">
+                <img src="images (1).jpg" alt="blue polo">
+            </a>
+            <div class="desc">Slim fit sports tshirt</div>
+            <div class="desc">Rs.500</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class="shirt">
+            <a href="images (2).jpg" target="_blank">
+                <img src="images (2).jpg" alt="blue polo">
+            </a>
+            <div class="desc">blue polo T-shirt regular fit</div>
+            <div class="desc">Rs.650</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class="shirt">
+            <a href="images.jpg" target="_blank">
+                <img src="images.jpg" alt="blue polo">
+            </a>
+            <div class="desc">blue polo T-shirt slim fit</div>
+            <div class="desc">Rs.700</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class="shirt">
+            <a href="download.jpg" target="_blank">
+                <img src="download.jpg" alt="red polo">
+            </a>
+            <div class="desc">red polo T-shirt slim fit</div>
+            <div class="desc">Rs.499</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class='shirt' >
+            <a href="images (3).jpg" target="_blank">
+                <img src="images (3).jpg" alt="red polo">
+            </a>
+            <div class="desc">white full sleeve</div>
+            <div class="desc">Rs.500</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+        <div class='shirt'>
+            <a href="images (4).jpg" target="_blank">
+                <img src="images (4).jpg" alt="red polo">
+            </a>
+            <div class="desc">black full sleeve</div>
+            <div class="desc">Rs.500</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+        <div class='shirt' >
+            <a href="images (5).jpg" target="_blank">
+                <img src="images (5).jpg" alt="red polo">
+            </a>
+            <div class="desc">Nike Jordan</div>
+            <div class="desc">Rs.15000</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class='shirt' >
+            <a href="images (6).jpg" target="_blank">
+                <img src="images (6).jpg" alt="red polo">
+            </a>
+            <div class="desc">Nike Zoom Fly</div>
+            <div class="desc">Rs.6999</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div><br>
+        </div>
+
+        <div class='shirt' >
+            <a href="images (7).jpg" target="_blank">
+                <img src="images (7).jpg" alt="red polo">
+            </a>
+            <div class="desc">Nike Pegasus</div>
+            <div class="desc">Rs.5000</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class='shirt' >
+            <a href="images (8).jpg" target="_blank">
+                <img src="images (8).jpg" alt="red polo">
+            </a>
+            <div class="desc">Nike Jordan </div>
+            <div class="desc">Rs.15999</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class='shirt' >
+            <a href="images (9).jpg" target="_blank">
+                <img src="images (9).jpg" alt="red polo">
+            </a>
+            <div class="desc">nike air</div>
+            <div class="desc">Rs.4200</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div>
+        </div>
+
+        <div class='shirt' >
+            <a href="images (10).jpg" target="_blank">
+                <img src="images (10).jpg" alt="red polo">
+            </a>
+            <div class="desc">Nike Pro max</div>
+            <div class="desc">Rs.3098</div><br>
+            <div class="desc"><button onclick="count()">Add to cart</button></div><br>
+        </div>
+    </div>
+
+        <div class="gas">
+            <button onclick="display()">Buy Now</button><br>
+            
+            <div id="cart">
+                
+                <p id="Add">Cart:0</p>
+                
+            </div>
+        </div>
+        <script>
+            var numberElement = document.getElementById('Add');
+
+            var number = 0;
+            function count() {
+                number++;
+                numberElement.innerHTML = `Cart:${number}`;
+            }
+            function display() {
+                if (number === 0) {
+                    alert("Your cart is empty. Please add items to your cart before buying.");
+                } else {
+                    alert("Your order has been placed. Thank you for shopping with us!" );
+                }
+                number = 0;
+                numberElement.textContent =`Cart:${number}`;
+            }
+        </script>
+
+       
+
+
+    
+    
+</body>
+</html>

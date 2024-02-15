@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kishore</title>
+    <style>
+        #header{
+            background-color:skyblue;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 20px 20px 20px;
+            border-radius: 10px;
+        }
+
+        
+
+        body{
+            background-color: rgb(203, 232, 232);
+        }
+
+        .wrap1{
+            background-color:white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 20px 20px 20px;
+            border-radius: 10px;
+            
+
+        }
+
+        #page{
+            margin: 20px 20px 20px 20px; 
+            padding: 20px 20px 20px 20px;
+            width: 60%;
+            
+            }
+
+        body{
+            margin: 10px 10px 10px 10px;
+            padding: 20px 20px 20px 20px; 
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }    
+
+        #submit{
+            
+        
+        color: rgb(251, 239, 239);
+        padding: 15px 32px;
+        margin: 4px 2px;
+        border-radius: 10px;
+           
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header id="header">
+            <h2>Course Registration FORM</h2>
+        </header>
+        <section>
+            <form action="#">
+                <div class="wrap1">
+                    <label>Enter Your Name</label><br><br>
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                
+                <div class="wrap1">
+                    <label>Enter Your Email id</label><br><br>
+                    <input type="email" placeholder="Enter Your Email id">
+                </div>
+                
+                <div class="wrap1">
+                    <label>Enter Your Date of Birth</label><br><br>
+                    <input type="date">
+                </div>
+                
+                <div class="wrap1">
+                    <label>Enter Your Mobile Number</label><br><br>
+                    <input type="tel" placeholder="Mobile Number">
+                </div>
+                
+                <div class="wrap1">
+                    <label>Gender</label><br><br>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    
+                </div>
+                <div class="wrap1">
+                    <label>Select a course</label>
+                    <select>
+                        <option>DataScience</option>
+                        <option>UI/UX</option>
+                        <option>AI</option>
+                        <option>CloudComputing</option>
+                    </select>
+                </div>
+
+                
+
+                <div class="wrap1">
+                    <label>Mode of Course</label><br><br>
+                    <input type="checkbox">
+                    <label>online</label>
+                    <input type="checkbox">
+                    <label>offline</label>
+                </div>
+
+                <div id="submit">
+                    <input type="submit">
+                    
+                </div>
+
+
+            </form>
+        </section>
+    </div>
+</body>
+</html>
