@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kishore</title>
+    <link rel="stylesheet" href="Kishorekumar_Styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1><ins>Guess The Number</ins></h1>
+        <p>Guess a number between 1 and 15</p>
+        <input id="guess" min="1" max="15" type="number">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+        <img src="Kishorekumar_image1.jpg" alt="guess number">
+    </div>
+
+    <script>
+        var randomNumber = Math.floor(Math.random()*15)+1;
+        var guesses = 0;
+        var gameEnded = false
+        
+
+        function checkGuess(){
+            if(gameEnded){
+                return;
+            }
+            
+            var guess = document.getElementById('guess').value;
+            guesses++;
+
+            if(guess == randomNumber){
+                gameEnded=true
+                
+                document.getElementById('message').innerHTML = "Congratulations you guessed correctly";
+
+            }else if(guesses == 3){
+                gameEnded=true
+                
+                document.getElementById('message').innerHTML = "sorry you didnt guess the number. the number was "+randomNumber+" .";
+            }    
+            else if(guess>randomNumber){
+                document.getElementById('message').innerHTML = "Too high  " +(3-guesses)+" guesses left";
+            }
+            else if(guess<randomNumber){
+                document.getElementById('message').innerHTML = "Too low  " +(3-guesses)+" guesses left";
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>
